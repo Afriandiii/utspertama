@@ -1,22 +1,40 @@
-package pengguna;
-import java.util.Scanner;
-public class Mhs {
+package mahasiswa;
 
-    Public.static vold main(string[] args) {
-        java.util.Scanner input = new java.util.Scanner (System.in);
+public class Mhs{
+    private String nama;
+    private String nim;
+    private Int smt;
 
-        String Nama;
-        String Nim;
-        Int Smt;
+    public Mhs(String nama, String nim, Int smt){
+        this.nama = nama;
+        this.nim = nim;
+        this.smt = smt;
+    }
+    public Mhs(){
+    }
 
-        System.out.println("INPUT NAMA =");
-        System.out.println("INPUT NIM =");
-        System.out.println("INPUT SEMESTER");
+    public void setNama(String nama){
+        this.nama = nama;
+    }
 
-        System.out.println("memberi nilai dan mengambil nilai nama");
-        System.out.println("memberi nilai dan mengambil nilai nim");
-        System.out.println("memberi nilai dan mengambil nilai smt");
+    public String getNama(){
+        return this.nama;
+    }
+
+    public void setNim(String nim){
+        this.nim = nim;
+    }
+
+    public String getNim(){
+        return this.nim;
+    }
+
+    public void setSmt(Int smt){
+        this.smt = smt;
+    }
+
+    public Int getSmt(){
+        return this.smt;
     }
 
 }
-

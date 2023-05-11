@@ -1,15 +1,24 @@
-ackage pengguna;
+package user;
 
-public class User {
-    Scanner console = new Scanner (System.in);
+public class User{
 
-    String user,pass;
+    private String username;
+    private String password;
 
-    System.out.println("Enter username: ");
-    Username = console.nextLine();
-    System.out.println("Enter password: ");
-    password = console.nextLine();
+    public void setUsername(String username){
+        this.username = username;
+    }
 
-    
+    public String getUsername(){
+        return this.username;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
+    }
+
+    public String getPassword(){
+        return this.password;
+    }
 
 }
